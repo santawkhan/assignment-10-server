@@ -8,7 +8,7 @@ const chefData = require('./data/chef.json')
 app.use(cors());
 
 app.get('/', (req, res) => {
-
+    res.send('hello world')
 });
 
 app.get('/chefData', (req, res) => {
