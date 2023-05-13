@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 app.get('/chefData', (req, res) => {
     res.send(chefData);
 })
-app.get("/chefData/:id", (req, res) => {
+app.get("/chefData/:", (req, res) => {
     const id = req.params.id;
     const item = chefData?.find(pd => pd.id == id)
     res.send({ item })
