@@ -17,7 +17,7 @@ app.get('/chefData', (req, res) => {
 app.get("/chefData/:id", (req, res) => {
     const id = req.params.id;
     const item = chefData?.find(pd => pd.id == id)
-
+    res.send({ item })
 })
 app.listen(port, () => {
     console.log(`Chef Server is Running:${port}`)
